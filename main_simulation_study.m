@@ -32,8 +32,8 @@ for t = 1:test_time_steps
         obs_idx = ones(size(obs));
         
         % clustering the observed time series
-        [I_chain_algo1, dm] = unsurp_wssp_offline_algo(obs, obs_idx, n_clusters);
-        [I_chain_algo2, ~] = unsurp_wssp_online_algo(obs, obs_idx, n_clusters, dm);
+        [I_chain_algo1, dm] = unsup_wssp_offline_algo(obs, obs_idx, n_clusters);
+        [I_chain_algo2, ~] = unsup_wssp_online_algo(obs, obs_idx, n_clusters, dm);
        
         % calculate misclassification rate
         miscls_rate_offline_algo1(t,sim) = misclassify_rate(I_chain_algo1, cluster_ind);
@@ -90,8 +90,8 @@ for t = 1:test_time_steps
         cluster_ind_online = cluster_ind(keep_idx);
         
         % clustering the observed time series
-        [I_chain_algo1, dm] = unsurp_wssp_offline_algo(obs, obs_idx, n_clusters);
-        [I_chain_algo2, ~] = unsurp_wssp_online_algo(obs, obs_idx, n_clusters, dm);
+        [I_chain_algo1, dm] = unsup_wssp_offline_algo(obs, obs_idx, n_clusters);
+        [I_chain_algo2, ~] = unsup_wssp_online_algo(obs, obs_idx, n_clusters, dm);
        
         % calculate misclassification rate
         miscls_rate_offline_algo1(t,sim) = misclassify_rate(I_chain_algo1, cluster_ind_online);

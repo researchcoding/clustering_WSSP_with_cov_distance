@@ -1,4 +1,4 @@
-function [I,dm]=unsurp_wssp_online_algo(m,m_idx,k,varargin)
+function [I,dm]=unsup_wssp_online_algo(m,m_idx,k,varargin)
 % UNSURP_WSSP_ONLINE_ALGO: perform oNline clustering algorithm and with
 %                          respect to observed times series, with known
 %                          number of clusters

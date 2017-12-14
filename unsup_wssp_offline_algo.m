@@ -1,4 +1,4 @@
-function [I, dm] = unsurp_wssp_offline_algo(m,m_idx,k,varargin)
+function [I, dm] = unsup_wssp_offline_algo(m,m_idx,k,varargin)
 % UNSURP_WSSP_OFFLINE_ALGO: perform offline clustering algorithm and with
 %                           respect to observed times series, with known
 %                           number of clusters
