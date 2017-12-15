@@ -59,7 +59,7 @@ function [I,dm]=unsup_wssp_online_algo(m,m_idx,k,varargin)
             selected_obs = m(selected_idx, :);
             selected_obs_ind = m_idx(selected_idx, :);
             I_selected = ...
-                unsurp_wssp_offline_algo(selected_obs, selected_obs_ind, k, dm(selected_idx,selected_idx));
+                unsup_wssp_offline_algo(selected_obs, selected_obs_ind, k, dm(selected_idx,selected_idx));
             y = [];
             for z = 1:k
                 idx = selected_idx(I_selected == z);
