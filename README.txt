@@ -1,7 +1,9 @@
 Project code of clustering weakly stationary stochastic processes
 
+
 Summary:
 The Matlab codes contained in this repository are based on the research (see Citation) of clustering weakly stationary stochastic processes. This technique is applicable to the unsupervised learning with respect to time series that are weakly stationary.
+
 
 Author: Ran Zhao (All rights reserved.)
 
@@ -19,6 +21,7 @@ sim_wssp_paths.m: The function simulates one example of weakly stationary stocha
 unsup_wssp_offline_algo.m: This unsupervised clustering script uses offline methodology (Algorithm 1 in cited paper) to perform clustering analysis. 
 
 unsup_wssp_online_algo.m: This unsupervised clustering script uses online methodology (Algorithm 2 in cited paper) to perform clustering analysis.
+
 
 Citation:
 Q. Peng, N. Rao and R. Zhao. Unsupervised Clustering of Weakly Stationary Weakly Ergodic Processes using Similarity Measure of Orthogonality. ArXiv, 2017.
